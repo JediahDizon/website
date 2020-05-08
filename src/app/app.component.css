@@ -1,0 +1,8 @@
+.container {
+	overflow:auto; /* This prevents the child from adding margins to the parent */
+	height: 100vh;
+}
+
+.container > * {
+	margin: 20px; /* This is to allow us to add elements without margin in the container */
+}

@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5)
+}
+
+/* Native UI Overrides */
+html * {
+	color: white !important;
+}
+body {
+	/*max-width: 800px;*/
+	background-image: linear-gradient(to bottom right, #005fd6, #32f2ff);
+	margin: auto;
+}
+h1, h2, h3, h4, h5 {
+	/* margin-top: 0 !important; */
+}
+hr {
+	border-top: none;
+	opacity: 0.5
+}
+
+/* Clarity UI Overrides */
+.btn {
+	border-radius: 0;
+	border: none !important;
+	background-color: rgba(255, 255, 255, 0.3) !important;
+	transition: background-color .33s cubic-bezier(0.20, 0, 0, 1);
+}
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.btn:active {
+	box-shadow: none !important;
+	background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Browser UI Overrides */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}

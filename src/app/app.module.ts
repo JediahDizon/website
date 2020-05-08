@@ -1,16 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
+import { ClarityModule } from "@clr/angular";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { CollapseComponent } from "./components/collapse/collapse.component";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		CollapseComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+
+		// UI Components
+		ClarityModule,
+		BrowserAnimationsModule,
+		FlexLayoutModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

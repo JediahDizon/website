@@ -5,7 +5,29 @@
   "projects": {
     "jediahdizon-website": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+				"@schematics/angular:component": {
+					"prefix": "app",
+					"styleext": "scss",
+					"lintFix": true
+				},
+				"@schematics/angular:directive": {
+					"prefix": "app",
+					"lintFix": true
+				},
+				"@schematics/angular:pipe": {
+					"lintFix": true
+				},
+				"@schematics/angular:class": {
+					"lintFix": true
+				},
+				"@schematics/angular:module": {
+					"lintFix": true
+				},
+				"@schematics/angular:service": {
+					"lintFix": true
+				}
+			},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,9 +46,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js",
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +147,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jediahdizon-website"
+    }
+  },
+  "defaultProject": "jediahdizon-website",
+  "cli": {
+    "analytics": "3e34ee86-538e-4e34-b34e-558cd78e50e5"
+  }
 }

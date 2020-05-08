@@ -1,0 +1,51 @@
+#image-container {
+	min-height: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#container {
+	overflow-x: hidden;
+
+	position: relative;
+	width: 0;
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: width .66s cubic-bezier(0.20, 0, 0, 1), opacity .25s cubic-bezier(0.20, 0, 0, 1);
+}
+#container * {
+	margin: 20px;
+}
+
+#container.expanded {
+	width: 50vw;
+	opacity: 1;
+}
+
+#content {
+	position: absolute;
+	width: 45vw; /* It's not the same as the container because this needs to compensate its margin */
+	opacity: 0;
+	transition: opacity .33s cubic-bezier(0.20, 0, 0, 1);
+}
+
+#content.expanded {
+	opacity: 1;
+}
+
+#trigger {
+	padding: 0 20px 0 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: background-color .33s cubic-bezier(0.20, 0, 0, 1);
+}
+
+#trigger:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#icon {
+	transform: rotate(90deg);
+	transition: transform .33s cubic-bezier(0.20, 0, 0, 1);
+}
+#icon.expanded {
+	transform: rotate(270deg);
+}
