@@ -27,7 +27,6 @@
 	<div
 		*ngFor="let workExperience of workExperiences"
 		fxLayout
-		fxLayout.xs="column"
 		fxLayoutAlign="center"
 	>
 		<collapse imageUrl="{{ workExperience.imageUrl }}">
@@ -52,20 +51,21 @@
 	</div>
 
 	<div
-		*ngFor="let workExperience of workExperiences"
-		fxLayout
-		fxLayout.xs="column"
+		*ngFor="let project of codeAdventures"
+		fxLayout="column"
 		fxLayoutAlign="center"
 	>
-		<collapse imageUrl="{{ workExperience.imageUrl }}">
+		<code-project projectUrl="/assets/ray-casting/index.html">
+			<iframe project frameborder="0" width="300" height="300" src="/assets/ray-casting/index.html"></iframe>
+
 			<div content>
-				<h3>{{ workExperience.title }}</h3><small>{{ workExperience.subtitle }}</small>
-				<p style="white-space:pre-wrap;">{{ workExperience.content }}</p>
+				<h3>{{ project.title }}</h3><small>{{ project.subtitle }}</small>
+				<p style="white-space:pre-wrap;">{{ project.content }}</p>
 			</div>
 
-			<div *ngIf="workExperience.externalLinks.length > 0" footer>
-				<button *ngFor="let link of workExperience.externalLinks" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+			<div *ngIf="project.externalLinks.length > 0" footer>
+				<button *ngFor="let link of project.externalLinks" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}</button>
 			</div>
-		</collapse>
+		</code-project>
 	</div>
 </div>

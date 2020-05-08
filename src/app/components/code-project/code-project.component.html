@@ -1,0 +1,28 @@
+<div
+	fxLayout
+	fxLayoutAlign="center"
+	style="height:{{height}}px;"
+>
+	<div id="project-container">
+		<ng-content select="[project]"></ng-content>
+	</div>
+
+	<div id="container" [ngClass]="{expanded: expanded}">
+		<div id="content" [ngClass]="{expanded: expanded}">
+			<ng-content select="[content]"></ng-content>
+
+			<div [style.margin]="'20px 0 0 0'">
+				<ng-content select="[footer]"></ng-content>
+			</div>
+		</div>
+	</div>
+
+	<div id="trigger" (click)="toggle()">
+		<span
+			fxFill
+			fxLayoutAlign="center center"
+		>
+			<clr-icon id="icon" [ngClass]="{expanded: expanded}" shape="angle"></clr-icon>
+		</span>
+	</div>
+</div>

@@ -10,6 +10,21 @@ export class AppComponent {
 	author = metaData.author;
 	version = metaData.version;
 
+	codeAdventures = [
+		{
+			title: "Ray Casting",
+			subtitle: "Code Train",
+			content: "Implemented a \"Ray Casting\" particle with the help of Code Train's tutorial online. Majority of the code was implemented by me with the exception of 2 mathematical formulas which was copied from the tutorial:\n\n- Formula to determine if 2 lines intersect\n- Formula to determine if the casted ray has already intersected.",
+			projectUrl: "/assets/ray-casting/index.html",
+			externalLinks: [
+				{
+					name: "Tutorial",
+					url: "https://www.youtube.com/watch?v=TOEi6T2mtHo"
+				}
+			]
+		}
+	];
+
 	workExperiences = [
 		{
 			title: "Wellman Offline",

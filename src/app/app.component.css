@@ -1,6 +1,7 @@
 .container {
 	overflow:auto; /* This prevents the child from adding margins to the parent */
 	height: 100vh;
+	padding-bottom: 50vh;
 }
 
 .container > * {
