@@ -17,13 +17,13 @@
 }
 
 #container.expanded {
-	width: 50vw;
+	width: 30vw;
 	opacity: 1;
 }
 
 #content {
 	position: absolute;
-	width: 45vw; /* It's not the same as the container because this needs to compensate its margin */
+	width: 25vw; /* It's not the same as the container because this needs to compensate its margin */
 	opacity: 0;
 	transition: opacity .33s cubic-bezier(0.20, 0, 0, 1);
 }

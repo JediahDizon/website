@@ -1,5 +1,5 @@
 <div class="container">
-	<div style="max-width: 600px; margin: auto; margin-top: 5vh;">
+	<div style="max-width: 45vw; margin: auto; margin-top: 30vh;">
 		<h1 style="font-size: 50pt; line-height: 60pt;">Jediah Dizon</h1>
 		<span style="font-size: 15pt; opacity: 0.5;">JediahJosuah@gmail.com</span>
 		<p>Software Developer who mainly focus on Javascript front-end frameworks and libraries such as Angular & ReactJS whilst being capable at full-stack development.</p>
@@ -10,7 +10,10 @@
 			fxLayoutAlign="baseline"
 		>
 			<button class="btn btn-primary" (click)="openLink('https://github.com/JediahDizon', '_blank')">
-				<clr-icon shape="link" size="32"></clr-icon> GitHub
+				<clr-icon shape="pop-out"></clr-icon> GitHub
+			</button>
+			<button class="btn btn-primary" (click)="openLink('https://www.linkedin.com/in/jediahdizon/', '_blank')">
+				<clr-icon shape="pop-out"></clr-icon> LinkedIn
 			</button>
 		</div>
 	</div>
@@ -18,8 +21,8 @@
 	<!-- --------------- -->
 	<!-- WORK EXPERIENCE -->
 	<!-- --------------- -->
-	<hr style="margin: 0; margin-top: 20px" />
-	<div style="max-width: 600px; margin: auto;">
+	<hr />
+	<div style="max-width: 45vw; margin: auto;">
 		<h1>Work Experience<small style="opacity: 0.5; margin-left: 20px;">2 Years</small></h1>
 		<p>Primarily employed by Resource Energy Solutions for 2 years.</p>
 	</div>
@@ -32,6 +35,7 @@
 		<collapse imageUrl="{{ workExperience.imageUrl }}">
 			<div content>
 				<h3>{{ workExperience.title }}</h3><small>{{ workExperience.subtitle }}</small>
+				<br /><br />
 				<p style="white-space:pre-wrap;">{{ workExperience.content }}</p>
 			</div>
 
@@ -44,28 +48,110 @@
 	<!-- -------------- -->
 	<!-- CODE ADVENTURE -->
 	<!-- -------------- -->
-	<hr style="margin: 0; margin-top: 20px" />
-	<div style="max-width: 600px; margin: auto;">
+	<hr />
+	<div style="max-width: 45vw; margin: auto;">
 		<h1>Code Adventure<small style="opacity: 0.5; margin-left: 20px;">Personal Projects</small></h1>
 		<p>Applications I have worked on to expand my knowledge in software development.</p>
 	</div>
 
 	<div
-		*ngFor="let project of codeAdventures"
 		fxLayout="column"
 		fxLayoutAlign="center"
 	>
-		<code-project projectUrl="/assets/ray-casting/index.html">
+		<code-project>
 			<iframe project frameborder="0" width="300" height="300" src="/assets/ray-casting/index.html"></iframe>
 
 			<div content>
-				<h3>{{ project.title }}</h3><small>{{ project.subtitle }}</small>
-				<p style="white-space:pre-wrap;">{{ project.content }}</p>
+				<h3>Ray Casting</h3><small>Code Train</small>
+				<br /><br />
+				<p style="white-space:pre-wrap;">Implemented a "Ray Casting" particle with the help of Code Train's tutorial online. Majority of the code was implemented by me with the exception of 2 mathematical formulas which was copied from the tutorial:{{ "\n\n" }}- Formula to determine if 2 lines intersect{{ "\n" }}- Formula to determine if the casted ray has already intersected.{{ "\n\n" }}This app generates "walls" at random places so if you don't see a wall, just refresh the page.</p>
 			</div>
 
-			<div *ngIf="project.externalLinks.length > 0" footer>
-				<button *ngFor="let link of project.externalLinks" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+			<div footer>
+				<button
+					*ngFor="let link of [
+						{
+							name: 'Tutorial',
+							url: 'https://www.youtube.com/watch?v=TOEi6T2mtHo'
+						},
+						{
+							name: 'Code',
+							url: 'https://github.com/JediahDizon/website/tree/master/src/assets/ray-casting'
+						}
+					]"
+					class="btn btn-primary"
+					(click)="openLink(link.url, '_blank')">{{ link.name }}
+				</button>
 			</div>
 		</code-project>
 	</div>
+
+	<div
+		fxLayout="column"
+		fxLayoutAlign="center"
+	>
+		<code-project>
+			<video project width="300" height="300" controls>
+				<source src="/assets/project-naa/video.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div content>
+				<h3>Youtube Voice Over</h3><small>Personal</small>
+				<br /><br />
+				<p style="white-space:pre-wrap;">Made a Tinder-style mobile app that allows the user to record voice-overs and play a video simultaneously. Meant primarily for voice actors practicing voice acting by recording voice-overs on random youtube videos.</p>
+			</div>
+
+			<div footer>
+				<button
+					*ngFor="let link of [
+						{
+							name: 'Code',
+							url: 'https://github.com/JediahDizon/project-naa'
+						}
+					]"
+					class="btn btn-primary"
+					(click)="openLink(link.url, '_blank')">{{ link.name }}
+				</button>
+			</div>
+		</code-project>
+	</div>
+
+	<!-- ---------------------- -->
+	<!-- EDUCATIONAL EXPERIENCE -->
+	<!-- ---------------------- -->
+	<hr />
+	<div style="max-width: 45vw; margin: auto;">
+		<h1>Educational Experience</h1>
+		<p>Programs that bootstraps my career as a software developer.</p>
+	</div>
+
+	<div
+		*ngFor="let educationalExperience of educationalExperiences"
+		fxLayout
+		fxLayoutAlign="center"
+	>
+		<collapse imageUrl="{{ educationalExperience.imageUrl }}">
+			<div content>
+				<h3>{{ educationalExperience.title }}</h3><small>{{ educationalExperience.subtitle }}</small>
+				<br /><br />
+				<p style="white-space:pre-wrap;">{{ educationalExperience.content }}</p>
+			</div>
+
+			<div *ngIf="educationalExperience.externalLinks.length > 0" footer>
+				<button *ngFor="let link of educationalExperience.externalLinks" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+			</div>
+		</collapse>
+	</div>
+
+
+	<!-- -------- -->
+	<!-- ABOUT ME -->
+	<!-- -------- -->
+	<hr />
+	<div style="max-width: 45vw; margin: auto;">
+		<h1>About Me</h1>
+		<p>Want to know more about me? Email me for an interview! I would love to talk about how I can add value to your company.</p>
+	</div>
+
 </div>

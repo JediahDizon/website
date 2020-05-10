@@ -10,21 +10,6 @@ export class AppComponent {
 	author = metaData.author;
 	version = metaData.version;
 
-	codeAdventures = [
-		{
-			title: "Ray Casting",
-			subtitle: "Code Train",
-			content: "Implemented a \"Ray Casting\" particle with the help of Code Train's tutorial online. Majority of the code was implemented by me with the exception of 2 mathematical formulas which was copied from the tutorial:\n\n- Formula to determine if 2 lines intersect\n- Formula to determine if the casted ray has already intersected.",
-			projectUrl: "/assets/ray-casting/index.html",
-			externalLinks: [
-				{
-					name: "Tutorial",
-					url: "https://www.youtube.com/watch?v=TOEi6T2mtHo"
-				}
-			]
-		}
-	];
-
 	workExperiences = [
 		{
 			title: "Wellman Offline",
@@ -57,12 +42,47 @@ export class AppComponent {
 		{
 			title: "Support Dashboard",
 			subtitle: "Resource Energy Solutions",
-			content: "Made a NodeJS and React JS application combined with GraphQL and Sequelize framework to retrieve data from a MySQL database that showcases statistics involving the support team’s job performance.\n\nCollaborated with a Computer Systems person to give me database access in which the application communicated with.",
+			content: "Made a NodeJS and React JS application combined with GraphQL and Sequelize framework to retrieve data from a MySQL database that showcases statistics involving the support team’s job performance.\n\nCollaborated with a Computer Systems person to provide the database access in which the application communicates with.",
 			imageUrl: "/assets/support-dashboard.png",
 			externalLinks: [
 				{
 					name: "Company Website",
 					url: "https://www.resourceenergysolutions.com/"
+				}
+			]
+		}
+	];
+
+	educationalExperiences = [
+		{
+			title: "SAIT Polytechnic",
+			subtitle: "Software Development Major",
+			content: "Took a 2-year course that helps prepare full-stack developers prepare for the workforce. Subjects include web-socket programming, web development (HTML, CSS, Javascript, PHP), Java programming (JSP, JSTL), and team management (Requirements documentation, Team collaboration).\n\nGraduated with 3.72 GPA.",
+			imageUrl: "/assets/sait-polytechnic.png",
+			externalLinks: [
+				{
+					name: "Website",
+					url: "https://www.sait.ca/"
+				}
+			]
+		},
+		{
+			title: "Udemy",
+			subtitle: "Online Courses",
+			content: "Took a variety of programs including React Native, ReactJS, Flutter, and Angular to know more about the emerging trends in the field of software development.",
+			imageUrl: "/assets/udemy.png",
+			externalLinks: [
+				{
+					name: "React JS",
+					url: "https://goo.gl/MGnz7w"
+				},
+				{
+					name: "Node JS",
+					url: "https://goo.gl/w2xJ28"
+				},
+				{
+					name: "Hibernate & JPA",
+					url: "https://goo.gl/QB8dGb"
 				}
 			]
 		}

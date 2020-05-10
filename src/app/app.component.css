@@ -4,6 +4,6 @@
 	padding-bottom: 50vh;
 }
 
-.container > * {
+.container > *:not(hr) {
 	margin: 20px; /* This is to allow us to add elements without margin in the container */
 }

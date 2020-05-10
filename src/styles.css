@@ -29,7 +29,11 @@ h1, h2, h3, h4, h5 {
 }
 hr {
 	border-top: none;
-	opacity: 0.5
+	opacity: 0.5;
+	margin: 100px 0;
+}
+body p {
+	margin-top: 0;
 }
 
 /* Clarity UI Overrides */

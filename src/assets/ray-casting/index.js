@@ -12,7 +12,7 @@ function setup() {
 	walls.push(new Wall(500, 0, 500, 500));
 
 	// Create random walls and rays
-	const wallCount = random(1, 10);
+	const wallCount = random(3, 10);
 	for(let index = 0; index < wallCount; index++) {
 		walls.push(new Wall(random(0, 500), random(0, 500), random(0, 500), random(0, 500)));
 	}
