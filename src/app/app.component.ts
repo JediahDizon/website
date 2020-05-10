@@ -15,7 +15,7 @@ export class AppComponent {
 			title: "Wellman Offline",
 			subtitle: "Resource Energy Solutions",
 			content: "Develop an Offline version of the Wellman NextGen. Made with ReactJS with Ant Design UI framework, as well as Dexie JS for saving data to local browser. Made using Electron to run the desktop application alongside automatic updates.\n\nCollaborated with a backend developer and a code reviewer.",
-			imageUrl: "/assets/wellman-offline.png",
+			imageUrl: "./assets/wellman-offline.png",
 			externalLinks: [
 				{
 					name: "Company Website",
@@ -27,7 +27,7 @@ export class AppComponent {
 			title: "TORC Mobile",
 			subtitle: "Resource Energy Solutions",
 			content: "Developed an Android & iOS app as derivative of the TORC Web application using React Native. Made overhauling architectural design to the old TORC Mobile codebase which includes utilization of Realm DB local database for offline capability.\n\nCollaborated with a team of 5 backend developers from a separate system where the app synchronizes with and 2 graphic designers.",
-			imageUrl: "/assets/torc-mobile.png",
+			imageUrl: "./assets/torc-mobile.png",
 			externalLinks: [
 				{
 					name: "Company Website",
@@ -43,7 +43,7 @@ export class AppComponent {
 			title: "Support Dashboard",
 			subtitle: "Resource Energy Solutions",
 			content: "Made a NodeJS and React JS application combined with GraphQL and Sequelize framework to retrieve data from a MySQL database that showcases statistics involving the support team’s job performance.\n\nCollaborated with a Computer Systems person to provide the database access in which the application communicates with.",
-			imageUrl: "/assets/support-dashboard.png",
+			imageUrl: "./assets/support-dashboard.png",
 			externalLinks: [
 				{
 					name: "Company Website",
@@ -58,7 +58,7 @@ export class AppComponent {
 			title: "SAIT Polytechnic",
 			subtitle: "Software Development Major",
 			content: "Took a 2-year course that helps prepare full-stack developers prepare for the workforce. Subjects include web-socket programming, web development (HTML, CSS, Javascript, PHP), Java programming (JSP, JSTL), and team management (Requirements documentation, Team collaboration).\n\nGraduated with 3.72 GPA.",
-			imageUrl: "/assets/sait-polytechnic.png",
+			imageUrl: "./assets/sait-polytechnic.png",
 			externalLinks: [
 				{
 					name: "Website",
@@ -70,7 +70,7 @@ export class AppComponent {
 			title: "Udemy",
 			subtitle: "Online Courses",
 			content: "Took a variety of programs including React Native, ReactJS, Flutter, and Angular to know more about the emerging trends in the field of software development.",
-			imageUrl: "/assets/udemy.png",
+			imageUrl: "./assets/udemy.png",
 			externalLinks: [
 				{
 					name: "React JS",

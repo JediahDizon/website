@@ -6,28 +6,28 @@
     "jediahdizon-website": {
       "projectType": "application",
       "schematics": {
-				"@schematics/angular:component": {
-					"prefix": "app",
-					"styleext": "scss",
-					"lintFix": true
-				},
-				"@schematics/angular:directive": {
-					"prefix": "app",
-					"lintFix": true
-				},
-				"@schematics/angular:pipe": {
-					"lintFix": true
-				},
-				"@schematics/angular:class": {
-					"lintFix": true
-				},
-				"@schematics/angular:module": {
-					"lintFix": true
-				},
-				"@schematics/angular:service": {
-					"lintFix": true
-				}
-			},
+        "@schematics/angular:component": {
+          "prefix": "app",
+          "styleext": "scss",
+          "lintFix": true
+        },
+        "@schematics/angular:directive": {
+          "prefix": "app",
+          "lintFix": true
+        },
+        "@schematics/angular:pipe": {
+          "lintFix": true
+        },
+        "@schematics/angular:class": {
+          "lintFix": true
+        },
+        "@schematics/angular:module": {
+          "lintFix": true
+        },
+        "@schematics/angular:service": {
+          "lintFix": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -145,6 +145,10 @@
               "devServerTarget": "jediahdizon-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
