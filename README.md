@@ -1,6 +1,6 @@
 # Jediah Dizon - Website
 
-[Website Link](https://jediahdizon.github.io/website/ Homepage")
+[Website Link](https://jediahdizon.github.io/website/)
 
 This project is primarily used to showcase the projects that I have worked on throughout my career as a software developer.
 
