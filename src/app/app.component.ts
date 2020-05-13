@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 const metaData = require("../../package.json");
 
 @Component({
-	selector: "app-root",
+	selector: "body",
 	templateUrl: "./app.component.html",
 	styleUrls: ["./app.component.css"]
 })
@@ -69,7 +69,7 @@ export class AppComponent {
 		{
 			title: "Udemy",
 			subtitle: "Online Courses",
-			content: "Took a variety of programs including React Native, ReactJS, Flutter, and Angular to know more about the emerging trends in the field of software development.",
+			content: "Took a variety of programs including React Native, ReactJS, Flutter, and Angular to know more about the emerging trends in the field of software development.\n\nCurrently studying Flutter, and TensorFlow 2.0 for a future mobile app project and machile learning knowledge respectively.",
 			imageUrl: "./assets/udemy.png",
 			externalLinks: [
 				{

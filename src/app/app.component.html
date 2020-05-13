@@ -1,5 +1,5 @@
 <div class="container">
-	<div style="max-width: 40vw; margin: auto; margin-bottom: 100px; margin-top: 30vh;">
+	<div class="heading-container" style="margin-top: 30vh;">
 		<h1 style="font-size: 50pt; line-height: 60pt;">Jediah Dizon</h1>
 		<span style="font-size: 15pt; opacity: 0.5;">JediahJosuah@gmail.com</span>
 		<p>Software Developer who mainly focus on Javascript front-end frameworks and libraries such as Angular & ReactJS whilst being capable at full-stack development.</p>
@@ -22,7 +22,7 @@
 	<!-- WORK EXPERIENCE -->
 	<!-- --------------- -->
 	<hr />
-	<div style="max-width: 40vw; margin: auto; margin-bottom: 100px;">
+	<div class="heading-container">
 		<h1>Work Experience<small style="opacity: 0.5; margin-left: 20px;">2 Years</small></h1>
 		<p>Primarily employed by Resource Energy Solutions for 2 years.</p>
 	</div>
@@ -30,7 +30,7 @@
 	<div
 		*ngFor="let workExperience of workExperiences"
 		fxLayout
-		fxLayoutAlign="center"
+		fxLayoutAlign="baseline"
 	>
 		<collapse imageUrl="{{ workExperience.imageUrl }}">
 			<div content>
@@ -49,17 +49,17 @@
 	<!-- CODE ADVENTURE -->
 	<!-- -------------- -->
 	<hr />
-	<div style="max-width: 40vw; margin: auto; margin-bottom: 100px;">
+	<div class="heading-container">
 		<h1>Code Adventure<small style="opacity: 0.5; margin-left: 20px;">Personal Projects</small></h1>
 		<p>Applications I have worked on to expand my knowledge in software development.</p>
 	</div>
 
 	<div
 		fxLayout="column"
-		fxLayoutAlign="center"
+		fxLayoutAlign="baseline"
 	>
 		<code-project>
-			<iframe project frameborder="0" width="300" height="300" src="./assets/ray-casting/index.html"></iframe>
+			<iframe project frameborder="0" width="500" height="500" src="./assets/ray-casting/index.html"></iframe>
 
 			<div content>
 				<h3>Ray Casting</h3><small>Code Train</small>
@@ -88,10 +88,10 @@
 
 	<div
 		fxLayout="column"
-		fxLayoutAlign="center"
+		fxLayoutAlign="baseline"
 	>
 		<code-project>
-			<video project width="300" height="300" controls>
+			<video project width="500" height="500" controls>
 				<source src="./assets/project-naa/video.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -121,7 +121,7 @@
 	<!-- EDUCATIONAL EXPERIENCE -->
 	<!-- ---------------------- -->
 	<hr />
-	<div style="max-width: 40vw; margin: auto; margin-bottom: 100px;">
+	<div class="heading-container">
 		<h1>Educational Experience</h1>
 		<p>Programs that bootstraps my career as a software developer.</p>
 	</div>
@@ -129,7 +129,7 @@
 	<div
 		*ngFor="let educationalExperience of educationalExperiences"
 		fxLayout
-		fxLayoutAlign="center"
+		fxLayoutAlign="baseline"
 	>
 		<collapse imageUrl="{{ educationalExperience.imageUrl }}">
 			<div content>
@@ -149,7 +149,7 @@
 	<!-- ABOUT ME -->
 	<!-- -------- -->
 	<hr />
-	<div style="max-width: 40vw; margin: auto; margin-bottom: 100px;">
+	<div class="heading-container">
 		<h1>About Me</h1>
 		<p>Want to know more about me? Email me for an interview! I would love to talk about how I can add value to your company.</p>
 	</div>

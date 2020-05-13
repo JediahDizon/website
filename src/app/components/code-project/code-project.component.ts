@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
 	styleUrls: ["./code-project.component.css"]
 })
 export class CodeProjectComponent implements OnInit {
-	@Input() height = 300;
+	@Input() height = 500;
 	@Input() expanded = false;
 	@Input() projectUrl: string;
 

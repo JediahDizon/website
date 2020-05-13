@@ -57,6 +57,12 @@
             ]
           },
           "configurations": {
+            "hmr": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.hmr.ts"
+              }
+            ],
             "production": {
               "fileReplacements": [
                 {
@@ -93,6 +99,10 @@
             "browserTarget": "jediahdizon-website:build"
           },
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "jediahdizon-website:build:hmr"
+            },
             "production": {
               "browserTarget": "jediahdizon-website:build:production"
             }
