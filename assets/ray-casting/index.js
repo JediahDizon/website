@@ -3,7 +3,7 @@ const walls = [];
 let particle = null;
 
 function setup() {
-	createCanvas(300, 300);
+	createCanvas(500, 500);
 
 	// Create boundary around the canvas
 	walls.push(new Wall(0, 0, 500, 0));
