@@ -10,4 +10,13 @@
 
 	<body>
 	</body>
+
+	<script language="Javascript">
+		window.onload = function() {
+			var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+			if (mobile) {
+				alert("Seems like you're on a mobile device. This page isn't responsive YET. You can set the browser to display \"Desktop Mode\" to view this page properly.");
+			}
+		}
+	</script>
 </html>
