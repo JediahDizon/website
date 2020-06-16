@@ -3,18 +3,18 @@ const walls = [];
 let particle = null;
 
 function setup() {
-	createCanvas(350, 350);
+	createCanvas(500, 500);
 
 	// Create boundary around the canvas
-	walls.push(new Wall(0, 0, 350, 0));
-	walls.push(new Wall(0, 0, 0, 350));
-	walls.push(new Wall(0, 350, 350, 350));
-	walls.push(new Wall(350, 0, 350, 350));
+	walls.push(new Wall(0, 0, 500, 0));
+	walls.push(new Wall(0, 0, 0, 500));
+	walls.push(new Wall(0, 500, 500, 500));
+	walls.push(new Wall(500, 0, 500, 500));
 
 	// Create random walls and rays
 	const wallCount = random(3, 10);
 	for(let index = 0; index < wallCount; index++) {
-		walls.push(new Wall(random(0, 350), random(0, 350), random(0, 350), random(0, 350)));
+		walls.push(new Wall(random(0, 500), random(0, 500), random(0, 500), random(0, 500)));
 	}
 
 	for(let index = 0; index < 360; index += 5) {
@@ -30,8 +30,8 @@ function draw() {
 
 	push();
 	// Add dots to canvas for clearer location mapping
-	for(let xIndex = 0; xIndex < 350; xIndex += 10) {
-		for(let yIndex = 0; yIndex < 350; yIndex += 10) {
+	for(let xIndex = 0; xIndex < 500; xIndex += 10) {
+		for(let yIndex = 0; yIndex < 500; yIndex += 10) {
 			strokeWeight(1);
 			stroke("rgba(0, 0, 0, 0.3)");
 			point(xIndex, yIndex);
