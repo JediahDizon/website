@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, ElementRef, ViewChild, OnInit, Input } from "@angular/core";
 
 @Component({
 	selector: "code-project",
@@ -6,9 +6,10 @@ import { Component, OnInit, Input } from "@angular/core";
 	styleUrls: ["./code-project.component.css"]
 })
 export class CodeProjectComponent implements OnInit {
-	@Input() height = 500;
+	@Input() height = 350;
 	@Input() expanded = false;
 	@Input() projectUrl: string;
+	@ViewChild("container") parentContainer: ElementRef;
 
 	ngOnInit() {}
 

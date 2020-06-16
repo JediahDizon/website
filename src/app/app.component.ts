@@ -26,7 +26,7 @@ export class AppComponent {
 		{
 			title: "TORC Mobile",
 			subtitle: "Resource Energy Solutions",
-			content: "Developed an Android & iOS app as derivative of the TORC Web application using React Native. Made overhauling architectural design to the old TORC Mobile codebase which includes utilization of Realm DB local database for offline capability.\n\nCollaborated with a team of 5 backend developers from a separate system where the app synchronizes with and 2 graphic designers.",
+			content: "Developed an Android & iOS app as derivative of the TORC Web application using React Native. Made overhauling architectural design to the old TORC Mobile codebase which includes utilization of Realm DB local database for offline capability.\n\nMade new backend API endpoints via ASP.NET and C# for the mobile app to interface with TORC.\n\nCollaborated with a team of 5 backend developers from a separate system where the app synchronizes with and 2 graphic designers.",
 			imageUrl: "./assets/torc-mobile.png",
 			externalLinks: [
 				{

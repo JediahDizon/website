@@ -1,6 +1,6 @@
 <div
 	fxLayout
-	fxLayoutAlign="center"
+	fxLayoutAlign="flex-start"
 	style="height:{{height}}px;"
 >
 	<div id="image-container">
@@ -14,7 +14,7 @@
 	</div>
 
 	<div id="container" [ngClass]="{expanded: expanded}">
-		<div id="content" [ngClass]="{expanded: expanded}">
+		<div id="content" [ngClass]="{expanded: expanded}" style="width:{{parentContainer}}px;">
 			<ng-content select="[content]"></ng-content>
 
 			<div [style.margin]="'20px 0 0 0'">

@@ -5,10 +5,18 @@
 }
 
 .container > .heading-container {
-	max-width: 40vw;
+	max-width: 50vw;
 	margin: 100px auto 100px 100px;
 }
 
 .container > *:not(hr) {
 	margin: 0 auto 20px 100px; /* This is to allow us to add elements without margin in the container */
+}
+
+collapse {
+	width: 80%
+}
+
+code-project {
+	width: 80%
 }

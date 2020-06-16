@@ -17,13 +17,12 @@
 }
 
 #container.expanded {
-	width: 300px;
+	width: 100%;
 	opacity: 1;
 }
 
 #content {
 	position: absolute;
-	width: 260px; /* It's not the same as the container because this needs to compensate its margin */
 	opacity: 0;
 	transition: opacity .33s cubic-bezier(0.20, 0, 0, 1);
 }
