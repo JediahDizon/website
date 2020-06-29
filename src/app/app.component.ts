@@ -12,18 +12,6 @@ export class AppComponent {
 
 	workExperiences = [
 		{
-			title: "Wellman Offline",
-			subtitle: "Resource Energy Solutions",
-			content: "Develop an Offline version of the Wellman NextGen. Made with ReactJS with Ant Design UI framework, as well as Dexie JS for saving data to local browser. Made using Electron to run the desktop application alongside automatic updates.\n\nCollaborated with a backend developer and a code reviewer.",
-			imageUrl: "./assets/wellman-offline.png",
-			externalLinks: [
-				{
-					name: "Company Website",
-					url: "https://www.resourceenergysolutions.com/"
-				}
-			]
-		},
-		{
 			title: "TORC Mobile",
 			subtitle: "Resource Energy Solutions",
 			content: "Developed an Android & iOS app as derivative of the TORC Web application using React Native. Made overhauling architectural design to the old TORC Mobile codebase which includes utilization of Realm DB local database for offline capability.\n\nMade new backend API endpoints via ASP.NET and C# for the mobile app to interface with TORC.\n\nCollaborated with a team of 5 backend developers from a separate system where the app synchronizes with and 2 graphic designers.",
@@ -36,6 +24,18 @@ export class AppComponent {
 				{
 					name: "Google Play",
 					url: "https://play.google.com/store/apps/details?id=com.torcmobile"
+				}
+			]
+		},
+		{
+			title: "Wellman Offline",
+			subtitle: "Resource Energy Solutions",
+			content: "Develop an Offline version of the Wellman NextGen. Made with ReactJS with Ant Design UI framework, as well as Dexie JS for saving data to local browser. Made using Electron to run the desktop application alongside automatic updates.\n\nCollaborated with a backend developer and a code reviewer.",
+			imageUrl: "./assets/wellman-offline.png",
+			externalLinks: [
+				{
+					name: "Company Website",
+					url: "https://www.resourceenergysolutions.com/"
 				}
 			]
 		},
