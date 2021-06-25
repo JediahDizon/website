@@ -60,6 +60,55 @@
 		fxLayout="column"
 		fxLayoutAlign="baseline"
 	>
+		<code-project height="350">
+			<div project id="image-container">
+				<div
+					[style.background-image]="'url(./assets/jobz-screenshot.png)'"
+					[style.background-size]="'cover'"
+					[style.background-repeat]="'no-repeat'"
+					[style.width]="'350px'"
+					[style.height]="'350px'"
+				></div>
+			</div>
+
+			<div content>
+				<h3>Job Z</h3><small>The Next Generation of Job Hunting</small>
+				<br /><br />
+				<p style="white-space:pre-wrap;">Made a full-stack React Native and GraphQL resume-search platform released for Android and iOS store with a working web demo.{{ "\n\n" }}Reimagined how job opportunities are made by steeering away from word-document resumes, deprecating the 6-second-scan-rule. Fully Integrated with a messaging system and push notifications.{{ "\n\n" }}
+					- Mobile app uses React Native with Apollo GraphQL{{ "\n" }}
+					- User login thorugh OAuth JWT from Google and Apple{{ "\n" }}
+					- Backend uses ExpressJS equipped with Apollo GraphQL Server for HTTPS and Socket support{{ "\n" }}
+					- DB uses a No-SQL Firestore database by Google
+				</p>
+			</div>
+
+			<div footer>
+				<button
+					*ngFor="let link of [
+						{
+							name: 'Web',
+							url: 'https://jobzapp.ca'
+						},
+						{
+							name: 'Google Play Store',
+							url: 'https://play.google.com/store/apps/details?id=com.jobz.android'
+						},
+						{
+							name: 'Apple App Store',
+							url: 'https://apps.apple.com/us/app/job-z/id1568144463'
+						}
+					]"
+					class="btn btn-primary"
+					(click)="openLink(link.url, '_blank')">{{ link.name }}
+				</button>
+			</div>
+		</code-project>
+	</div>
+
+	<div
+		fxLayout="column"
+		fxLayoutAlign="baseline"
+	>
 		<code-project>
 			<iframe project frameborder="0" width="350" height="350" src="./assets/ray-casting/index.html"></iframe>
 
@@ -132,7 +181,7 @@
 		</code-project>
 	</div>
 
-	<div
+	<!-- <div
 		fxLayout="column"
 		fxLayoutAlign="baseline"
 	>
@@ -161,7 +210,7 @@
 				</button>
 			</div>
 		</code-project>
-	</div>
+	</div> -->
 
 	<!-- ---------------------- -->
 	<!-- EDUCATIONAL EXPERIENCE -->
