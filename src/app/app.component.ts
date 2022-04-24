@@ -12,6 +12,34 @@ export class AppComponent {
 
 	workExperiences = [
 		{
+			title: "Software Developer",
+			subtitle: "Gigadat Inc",
+			content: "Worked on a full-stack role to handle data movement from multiple source streams using MySQL and Sequelize. Developed an OpenID compliant JWKS auth system in NodeJS to integrate with multiple sources of ID verification services for KYC (Know-Your-Customer). Maintained a ReactJS CMS web application used by clients to manage financial and KYC transactions alongside other business models.",
+			imageUrl: "./assets/gigadat-screenshot.png",
+			externalLinks: [
+				{
+					name: "Company Website",
+					url: "https://gigadatsolutions.com"
+				}
+			]
+		},
+		{
+			title: "Software Developer",
+			subtitle: "FieldFLEX",
+			content: "Developed and maintained a Cordova web and mobile app for building inspectors that talks to IBM TRIRIGA backend to move away from paper-based forms. Learned Sencha JS and Java Spring with synchronization between mobile app and web server.",
+			imageUrl: "./assets/fieldflex-screenshot.png",
+			externalLinks: [
+				{
+					name: "Company Website",
+					url: "https://fieldflex.com/"
+				},
+				{
+					name: "Google Play",
+					url: "https://play.google.com/store/apps/details?id=com.fieldflex"
+				}
+			]
+		},
+		{
 			title: "TORC Mobile",
 			subtitle: "Resource Energy Solutions",
 			content: "Developed an Android & iOS app as derivative of the TORC Web application using React Native. Made overhauling architectural design to the old TORC Mobile codebase which includes utilization of Realm DB local database for offline capability.\n\nMade new backend API endpoints via ASP.NET and C# for the mobile app to interface with TORC.\n\nCollaborated with a team of 5 backend developers from a separate system where the app synchronizes with and 2 graphic designers.",
