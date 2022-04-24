@@ -29,12 +29,15 @@
 			<div content>
 				<h3>{{ workExperience.title }}</h3><small>{{ workExperience.subtitle }}</small>
 				<br /><br />
-				<p style="white-space:pre-wrap;">{{ workExperience.content }}</p>
-			</div>
 
-			<div *ngIf="workExperience.externalLinks.length > 0" footer>
-				<button *ngFor="let link of workExperience.externalLinks" class="btn btn-primary"
-					(click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+				<div *ngIf="workExperience.externalLinks.length > 0" footer>
+					<button *ngFor="let link of workExperience.externalLinks" class="btn btn-primary"
+						(click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+				</div>
+
+				<br />
+
+				<p style="white-space:pre-wrap;">{{ workExperience.content }}</p>
 			</div>
 		</collapse>
 	</div>
@@ -60,24 +63,27 @@
 			<div content>
 				<h3>Pikachure</h3><small>Photoshoot for everyone, anywhere. Simply mark the map</small>
 				<br /><br />
-				<p style="white-space:pre-wrap;">Pikachure lets you and everyone on the platform to go on photo-trips through a 
-					public space where anyone and everyone can collaborate. Create and join open invites made by the community, 
+
+				<div footer>
+					<button *ngFor="let link of [
+						{
+							name: 'Web',
+							url: 'https://pikachure.com/'
+						}
+					]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
+					</button>
+				</div>
+
+				<br />
+
+				<p style="white-space:pre-wrap;">Pikachure lets you and everyone on the platform to go on photo-trips through a
+					public space where anyone and everyone can collaborate. Create and join open invites made by the community,
 					collaborate with every joinees and share photos, all in one space{{ "\n\n" }}
 					- Web application made with React JS{{ "\n" }}
 					- User login through OAuth JWT from Google with support for anonymous guest login{{ "\n" }}
 					- Backend uses NodeJS equipped with Apollo GraphQL Server{{ "\n" }}
 					- DB uses a No-SQL Firestore database by Google
 				</p>
-			</div>
-
-			<div footer>
-				<button *ngFor="let link of [
-					{
-						name: 'Web',
-						url: 'https://pikachure.com/'
-					}
-				]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
-				</button>
 			</div>
 		</code-project>
 	</div>
@@ -92,6 +98,27 @@
 			<div content>
 				<h3>Job Z</h3><small>The Next Generation of Job Hunting</small>
 				<br /><br />
+
+				<div footer>
+					<button *ngFor="let link of [
+							{
+								name: 'Web',
+								url: 'https://jobzapp.ca'
+							},
+							{
+								name: 'Google Play Store',
+								url: 'https://play.google.com/store/apps/details?id=com.jobz.android'
+							},
+							{
+								name: 'Apple App Store',
+								url: 'https://apps.apple.com/us/app/job-z/id1568144463'
+							}
+						]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
+					</button>
+				</div>
+
+				<br />
+
 				<p style="white-space:pre-wrap;">Made a full-stack React Native and GraphQL resume-search platform released for
 					Android and iOS store with a working web demo.{{ "\n\n" }}Reimagined how job opportunities are made by
 					steering away from word-document resumes, deprecating the 6-second-scan-rule, and letting everyone search for
@@ -101,24 +128,6 @@
 					- Backend uses NodeJS equipped with Apollo GraphQL Server for HTTPS and Socket support{{ "\n" }}
 					- DB uses a No-SQL Firestore database by Google
 				</p>
-			</div>
-
-			<div footer>
-				<button *ngFor="let link of [
-						{
-							name: 'Web',
-							url: 'https://jobzapp.ca'
-						},
-						{
-							name: 'Google Play Store',
-							url: 'https://play.google.com/store/apps/details?id=com.jobz.android'
-						},
-						{
-							name: 'Apple App Store',
-							url: 'https://apps.apple.com/us/app/job-z/id1568144463'
-						}
-					]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
-				</button>
 			</div>
 		</code-project>
 	</div>
@@ -130,24 +139,27 @@
 			<div content>
 				<h3>Ray Casting</h3><small>Code Train</small>
 				<br /><br />
+
+				<div footer>
+					<button *ngFor="let link of [
+							{
+								name: 'Tutorial',
+								url: 'https://www.youtube.com/watch?v=TOEi6T2mtHo'
+							},
+							{
+								name: 'Code',
+								url: 'https://github.com/JediahDizon/website/tree/master/src/assets/ray-casting'
+							}
+						]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
+					</button>
+				</div>
+
+				<br />
+
 				<p style="white-space:pre-wrap;">Implemented a "Ray Casting" particle with the help of Code Train's tutorial
 					online. Majority of the code was implemented by me with the exception of 2 mathematical formulas which was
 					copied from the tutorial:{{ "\n\n" }}- Formula to determine if 2 lines intersect{{ "\n" }}- Formula to
 					determine if the casted ray has already intersected.</p>
-			</div>
-
-			<div footer>
-				<button *ngFor="let link of [
-						{
-							name: 'Tutorial',
-							url: 'https://www.youtube.com/watch?v=TOEi6T2mtHo'
-						},
-						{
-							name: 'Code',
-							url: 'https://github.com/JediahDizon/website/tree/master/src/assets/ray-casting'
-						}
-					]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
-				</button>
 			</div>
 		</code-project>
 	</div>
@@ -162,14 +174,9 @@
 			<div content>
 				<h3>News & Task List</h3><small>API Requests</small>
 				<br /><br />
-				<p style="white-space:pre-wrap;">Made a full stack application with React JS and Java Hibernate Framework that
-					makes various HTTP request to multiple sources and presents the recieved data in a proper layout. Primarily
-					made to showcase an MVC architecture.{{ "\n\n" }}- Frontend uses GraphQL{{ "\n" }}- Backend uses Java
-					Hibernate framework{{ "\n" }}- DB is in Relational MySQL</p>
-			</div>
 
-			<div footer>
-				<button *ngFor="let link of [
+				<div footer>
+					<button *ngFor="let link of [
 						{
 							name: 'Front End Code',
 							url: 'https://github.com/JediahDizon/ReactRedux.view'
@@ -183,7 +190,15 @@
 							url: 'https://github.com/JediahDizon/ReactRedux.database'
 						}
 					]" class="btn btn-primary" (click)="openLink(link.url, '_blank')">{{ link.name }}
-				</button>
+					</button>
+				</div>
+
+				<br />
+
+				<p style="white-space:pre-wrap;">Made a full stack application with React JS and Java Hibernate Framework that
+					makes various HTTP request to multiple sources and presents the recieved data in a proper layout. Primarily
+					made to showcase an MVC architecture.{{ "\n\n" }}- Frontend uses GraphQL{{ "\n" }}- Backend uses Java
+					Hibernate framework{{ "\n" }}- DB is in Relational MySQL</p>
 			</div>
 		</code-project>
 	</div>
@@ -233,12 +248,15 @@
 			<div content>
 				<h3>{{ educationalExperience.title }}</h3><small>{{ educationalExperience.subtitle }}</small>
 				<br /><br />
-				<p style="white-space:pre-wrap;">{{ educationalExperience.content }}</p>
-			</div>
 
-			<div *ngIf="educationalExperience.externalLinks.length > 0" footer>
-				<button *ngFor="let link of educationalExperience.externalLinks" class="btn btn-primary"
-					(click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+				<div *ngIf="educationalExperience.externalLinks.length > 0" footer>
+					<button *ngFor="let link of educationalExperience.externalLinks" class="btn btn-primary"
+						(click)="openLink(link.url, '_blank')">{{ link.name }}</button>
+				</div>
+
+				<br />
+
+				<p style="white-space:pre-wrap;">{{ educationalExperience.content }}</p>
 			</div>
 		</collapse>
 	</div>
